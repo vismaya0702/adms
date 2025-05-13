@@ -1,0 +1,16 @@
+use company1;
+select * from regions;
+select * from locations;
+select * from job;
+
+insert into job(job_id,job_title,min_salary,max_salary) values (3,'Assistant',3000,6000),(4,'President',20000,40000),(5,'Vice president',15000,30000);
+insert into departments(department_id,departmnent_name,location_id)values(1,'Administartion',1000),(2,'Marketing',1100),(3,'Purchasing',1200),(4,'Human Resource',1300),(5,'Shipping',1400),(6,'IT',1500);
+select * from departments;
+
+insert into employee(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) values(100,'steven','nedumpally','steven@gmail.com',98899898,'1987-02-14',2,78900,1000,2),(200,'neena','kochar','neenakoch@gmail.com',75639474,'2004-12-09',1,34000,1001,1),(300,'alexander','hunold','alexehu@gmail.com',34848480,'2000-08-23',3,40000,1002,3);
+select * from employee;
+insert into dependents(dependent_id,first_name,last_name,relationship,employee_id)values(10,'mathew','cherian','student',100),(20,'herman','baer','mother',200),(30,'jennifier','king','son',300);
+select * from dependents;
+
+
+
